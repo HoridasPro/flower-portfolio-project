@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 *,*::after,*::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 .header{
   background-color: #f2dde1;
@@ -36,12 +39,11 @@
 .banner_h1{
   font-size: 5rem;
   font-weight: 900;
-  line-height: 80px;
   max-width: 700px;
 }
 .banner_p{
   font-size: 18px;
-  font-size: 400;
+  font-weight: 400;
   color: #393939;
   max-width: 600px;
   margin-top: 20px;
@@ -61,23 +63,89 @@
   width: 100%;
 }
 
+/* flower style  */
+.feature_flower_container{
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+ 
+.flower_h3{
+  font-size: 2.2rem;
+  font-weight: 900;
+}
+.flower_p{
+  font-size: 18px;
+  font-weight: 400;
+  color: #393939;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: 270px
+}
+.img1{
+  background-color: rgb(223, 187, 204);
+  padding: 50px 50px 0 50px;
+  border-radius: 50% 50% 0 0;
+}
+.img2{
+  background-color: #d7eeef;
+  padding: 50px 50px 0 50px;
+  border-radius: 50% 50% 0 0;
+}
+.img3{
+  background-color: #e2eed5;
+  padding: 50px 50px 0 50px;
+  border-radius: 50% 50% 0 0;
+}
+.img2 img{
+  margin-top: 50px;
+}
+.flower_imgs{
+  margin-top: 30px;
+  justify-content: space-around;
+  gap:10px ;
+}
+.img img{
+  max-width: 300px;
+  width: 100%;
+}
+.all_a{
+  display: flex;
+  justify-content: space-around;
+}
+.all_a a{
+  font-size: 1.1rem;
+  font-weight: 700;
+  color:#272727;
+  margin-top: 20px;
+  display: block;
+}
+
 /* Small Device Responsive */
 @media screen and (max-width:576px){
-  .banner{
+  .banner,.flower_imgs,.all_a{
   flex-direction: column;
   }
   .banner_content,.banner_h1,.banner_p{
   max-width: 100%;
   text-align: center;
-  padding: 0 20px;
+  margin: 0 20px;
   margin-top: 20px; 
- }
- .banner_h1{
+}
+.banner_h1{
   font-size: 4rem;
   line-height: 60px;
- }
- .banner img{
+}
+.banner img{
   max-width: 100%;
   margin-top: 50px;
- }
+}
+/* flower section */
+.flower_p{
+  margin-left: 0;
+  margin: 20px;
+}
+.img{
+  margin: 0 20px;
+}
  }
